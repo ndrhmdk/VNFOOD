@@ -1,0 +1,184 @@
+/* Streamlit-specific global adjustments */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
+}
+.main {
+    background: none; /* Remove Streamlit main background if any */
+}
+
+/* Adapt core styles from HTML template */
+:root {
+    --primary-color: #6D94C5;
+    --secondary-color: #91C8E4; 
+    --accent-color: #E8DFCA;
+    --text-color: #333;
+    --light-text-color: #6c757d;
+    --bg-light: #f8f9fa;
+    --success-color: #48B3AF;
+    --info-border: #4FB7B3;
+    --border-color: #e9ecef;
+}
+
+/* Simulate the centered container box (applied to the main Streamlit container) */
+/* Targeting the direct children of the app container to apply the main card style */
+[data-testid="stVerticalBlock"] > div:has(.title):first-child { 
+    text-align: center;
+    background-color: white;
+    padding: 50px 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    max-width: 750px;
+    margin: 20px auto; /* Centering the main block */
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+.lead {
+    color: var(--light-text-color);
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* --- IMAGE CENTERING FIX --- */
+/* Wrapper div for image centering */
+.image-preview-box {
+    margin: 20px auto 30px; /* Crucial for block-level centering */
+    max-width: 300px; /* Constrain size */
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Style for Streamlit image container inside the custom box */
+.image-preview-box > div[data-testid="stImage"] {
+    text-align: center !important;
+    padding: 0;
+}
+.image-preview-box > div[data-testid="stImage"] img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* -------------------------- */
+
+.result-card {
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #e6ffec; /* var(--info-bg) equivalent */
+    border: 2px solid var(--info-border);
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result-title {
+    color: var(--info-border);
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.data-label {
+    font-weight: 600;
+    color: var(--light-text-color);
+}
+
+.data-value {
+    font-weight: 700;
+    color: var(--text-color);
+}
+.data-value.dish {
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+.data-value.confidence {
+    color: var(--success-color);
+}
+
+.ingredients-box {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.ingredients-box h4 {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    border-bottom: 1px dashed var(--accent-color);
+    padding-bottom: 5px;
+}
+
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ingredients-list li {
+    background-color: var(--bg-light);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Custom styling for the file uploader */
+.upload-box {
+    text-align: center;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.stFileUploader {
+    margin-top: 20px;
+}
+.stFileUploader > label {
+    display: none; /* Hide default label */
+}
+.initial-state {
+    margin-top: 40px;
+    padding: 50px 20px;
+    background-color: var(--bg-light);
+    border: 2px dashed var(--border-color);
+    border-radius: 15px;
+}
+.initial-state i {
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+.initial-state p {
+    font-size: 1.2em;
+    color: var(--light-text-color);
+}

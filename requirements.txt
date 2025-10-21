@@ -1,0 +1,16 @@
+# Core scientific/machine learning libraries
+numpy
+matplotlib
+scikit-learn
+torch
+torchvision
+
+# Streamlit application and utilities
+streamlit
+pandas
+Pillow
+tqdm
+python-dotenv  # For load_dotenv
+
+# Google Gemini API client
+google-genai

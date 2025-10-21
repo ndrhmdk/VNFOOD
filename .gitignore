@@ -1,0 +1,82 @@
+# =============================
+# 🧠 Python & Streamlit Project
+# =============================
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.log
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+
+# =============================
+# 🧾 Environment & Secrets
+# =============================
+
+# Local environment variables
+.env
+*.env
+
+# Streamlit secrets (⚠️ Contains API keys)
+.streamlit/secrets.toml
+
+# Credentials or sensitive data
+credentials.py
+*.key
+*.json
+*.pem
+*.crt
+*.cer
+
+# =============================
+# 📦 Model Files & Checkpoints
+# =============================
+
+# Large model weight files
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.ckpt
+*.keras
+
+# =============================
+# 🧪 Jupyter & Cache
+# =============================
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyTorch & Matplotlib cache
+~$*
+.cache/
+torch_cache/
+*.ptl
+*.npz
+
+# =============================
+# 🌐 Deployment & OS Files
+# =============================
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# Streamlit local files
+.streamlit/config.toml
+.streamlit/credentials.toml

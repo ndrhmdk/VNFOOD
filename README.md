@@ -6,6 +6,11 @@ It identifies at least **three Vietnamese dishes — Banh Mi, Banh Cuon, and Pho
 
 ---
 
+## 🌐 **Live Demo**
+👉 Try it here: [https://vnfood-hmdk.streamlit.app/](https://vnfood-hmdk.streamlit.app/)
+
+---
+
 ## 🧠 **Project Overview**
 
 Food recognition and classification is a fascinating area of computer vision that teaches machines to recognize different types of food from images.  
@@ -98,6 +103,7 @@ The model was first trained with frozen convolutional layers, then fine-tuned on
 ## 🧩 **Project Structure**
 ```bash
 📁 food_app/
+├── .gitignore
 ├── README.md
 ├── credentials.py
 ├── main.py

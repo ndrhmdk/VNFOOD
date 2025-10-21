@@ -1,4 +1,5 @@
-API_KEY = 'AIzaSyDoMjd8WEokmnSxW1QTRWEWV2Vq5z1Xp4k'
+import streamlit as st
+api_key = st.secrets["GEMINI_API_KEY"]
 
 
 GEMINI_INSTRUCTION = """

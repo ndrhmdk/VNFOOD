@@ -112,7 +112,7 @@ The model was first trained with frozen convolutional layers, then fine-tuned on
 ├── styles.css
 ├── utils.py
 ├── VNFOOD_model_weights.pth
-├── vietfood-classifer.ipynb
+├── vietfood-classifier.ipynb
 └── [Challenge 1] Hoang Mai Duc Kien - Vietnamese Food Classification and Web Deployment.pdf
 ```
 
